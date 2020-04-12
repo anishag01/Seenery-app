@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		783FE4B824433D6200DD07CF /* Supermarkets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783FE4B724433D6200DD07CF /* Supermarkets.storyboard */; };
+		783FE4CB24433FF100DD07CF /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4BA24433FF000DD07CF /* LaunchViewController.swift */; };
+		783FE4CC24433FF100DD07CF /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4BB24433FF000DD07CF /* MockLocationService.swift */; };
+		783FE4CD24433FF100DD07CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4BC24433FF000DD07CF /* MapViewController.swift */; };
+		783FE4CE24433FF100DD07CF /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4BD24433FF000DD07CF /* AboutController.swift */; };
+		783FE4CF24433FF100DD07CF /* CameraFrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4BE24433FF100DD07CF /* CameraFrameHandler.swift */; };
+		783FE4D024433FF100DD07CF /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4BF24433FF100DD07CF /* ShoppingViewController.swift */; };
+		783FE4D224433FF100DD07CF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4C124433FF100DD07CF /* Utilities.swift */; };
+		783FE4D424433FF100DD07CF /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4C324433FF100DD07CF /* Services.swift */; };
+		783FE4D524433FF100DD07CF /* MerchantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4C424433FF100DD07CF /* MerchantCell.swift */; };
+		783FE4D624433FF100DD07CF /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4C524433FF100DD07CF /* MerchantViewController.swift */; };
+		783FE4D724433FF100DD07CF /* MerchantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4C624433FF100DD07CF /* MerchantTableViewController.swift */; };
+		783FE4D824433FF100DD07CF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4C724433FF100DD07CF /* MainTabBarController.swift */; };
+		783FE4D924433FF100DD07CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783FE4C824433FF100DD07CF /* GoogleService-Info.plist */; };
+		783FE4DC2443676800DD07CF /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 783FE4DB2443676800DD07CF /* Food101.mlmodel */; };
+		78DDB3FA2442B63900CC099D /* ListeningScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DDB3F92442B63900CC099D /* ListeningScreen.swift */; };
+		78E1C96F2442D63500843FAD /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1C96E2442D63500843FAD /* PulseAnimation.swift */; };
+		78E1C9732442E4C600843FAD /* StreetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1C9722442E4C600843FAD /* StreetScreen.swift */; };
+		B8CB100D23D49A70005484AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CB100C23D49A70005484AD /* AppDelegate.swift */; };
+		B8CB100F23D49A70005484AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CB100E23D49A70005484AD /* SceneDelegate.swift */; };
+		B8CB101123D49A70005484AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CB101023D49A70005484AD /* ViewController.swift */; };
+		B8CB101723D49A70005484AD /* Aware.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8CB101523D49A70005484AD /* Aware.xcdatamodeld */; };
+		B8CB101923D49A73005484AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CB101823D49A73005484AD /* Assets.xcassets */; };
+		B8CB101C23D49A73005484AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CB101A23D49A73005484AD /* LaunchScreen.storyboard */; };
+		B8CB102423D4A0C0005484AD /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B8CB102323D4A0BF005484AD /* Resnet50.mlmodel */; };
+		B8CB102623D4A5C8005484AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CB102523D4A5C8005484AD /* Main.storyboard */; };
+		F2FF0D7C286E221B9D8C7E71 /* Pods_Seenery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC1ED090F4A3820037C26D8 /* Pods_Seenery.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44DCD8D8AD9E7B175C6F85C1 /* Pods-Seenery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seenery.debug.xcconfig"; path = "Target Support Files/Pods-Seenery/Pods-Seenery.debug.xcconfig"; sourceTree = "<group>"; };
+		5CC1ED090F4A3820037C26D8 /* Pods_Seenery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seenery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783FE4B724433D6200DD07CF /* Supermarkets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Supermarkets.storyboard; sourceTree = "<group>"; };
+		783FE4BA24433FF000DD07CF /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		783FE4BB24433FF000DD07CF /* MockLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
+		783FE4BC24433FF000DD07CF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		783FE4BD24433FF000DD07CF /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		783FE4BE24433FF100DD07CF /* CameraFrameHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFrameHandler.swift; sourceTree = "<group>"; };
+		783FE4BF24433FF100DD07CF /* ShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		783FE4C124433FF100DD07CF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		783FE4C324433FF100DD07CF /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		783FE4C424433FF100DD07CF /* MerchantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantCell.swift; sourceTree = "<group>"; };
+		783FE4C524433FF100DD07CF /* MerchantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantViewController.swift; sourceTree = "<group>"; };
+		783FE4C624433FF100DD07CF /* MerchantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantTableViewController.swift; sourceTree = "<group>"; };
+		783FE4C724433FF100DD07CF /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		783FE4C824433FF100DD07CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		783FE4DB2443676800DD07CF /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
+		78DDB3F92442B63900CC099D /* ListeningScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningScreen.swift; sourceTree = "<group>"; };
+		78E1C96E2442D63500843FAD /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
+		78E1C9722442E4C600843FAD /* StreetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StreetScreen.swift; path = ../StreetScreen.swift; sourceTree = "<group>"; };
+		8FF28C355B5E75792B320A83 /* Pods-Seenery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seenery.release.xcconfig"; path = "Target Support Files/Pods-Seenery/Pods-Seenery.release.xcconfig"; sourceTree = "<group>"; };
+		B8CB100923D49A70005484AD /* Seenery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seenery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CB100C23D49A70005484AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8CB100E23D49A70005484AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B8CB101023D49A70005484AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8CB101623D49A70005484AD /* Aware.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aware.xcdatamodel; sourceTree = "<group>"; };
+		B8CB101823D49A73005484AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8CB101B23D49A73005484AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8CB101D23D49A73005484AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8CB102323D4A0BF005484AD /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		B8CB102523D4A5C8005484AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8CB100623D49A70005484AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FF0D7C286E221B9D8C7E71 /* Pods_Seenery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A54DA7C99E25D7532DB362F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44DCD8D8AD9E7B175C6F85C1 /* Pods-Seenery.debug.xcconfig */,
+				8FF28C355B5E75792B320A83 /* Pods-Seenery.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8CB100023D49A70005484AD = {
+			isa = PBXGroup;
+			children = (
+				B8CB100B23D49A70005484AD /* Aware */,
+				B8CB100A23D49A70005484AD /* Products */,
+				A54DA7C99E25D7532DB362F0 /* Pods */,
+				C2F1A215B6D3E2783DC1DF76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8CB100A23D49A70005484AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8CB100923D49A70005484AD /* Seenery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8CB100B23D49A70005484AD /* Aware */ = {
+			isa = PBXGroup;
+			children = (
+				78E1C9722442E4C600843FAD /* StreetScreen.swift */,
+				B8CB100C23D49A70005484AD /* AppDelegate.swift */,
+				B8CB100E23D49A70005484AD /* SceneDelegate.swift */,
+				B8CB101023D49A70005484AD /* ViewController.swift */,
+				B8CB102523D4A5C8005484AD /* Main.storyboard */,
+				783FE4B724433D6200DD07CF /* Supermarkets.storyboard */,
+				78E1C96E2442D63500843FAD /* PulseAnimation.swift */,
+				78DDB3F92442B63900CC099D /* ListeningScreen.swift */,
+				B8CB101823D49A73005484AD /* Assets.xcassets */,
+				B8CB101A23D49A73005484AD /* LaunchScreen.storyboard */,
+				783FE4BD24433FF000DD07CF /* AboutController.swift */,
+				783FE4BE24433FF100DD07CF /* CameraFrameHandler.swift */,
+				783FE4C824433FF100DD07CF /* GoogleService-Info.plist */,
+				B8CB101D23D49A73005484AD /* Info.plist */,
+				783FE4BA24433FF000DD07CF /* LaunchViewController.swift */,
+				783FE4C724433FF100DD07CF /* MainTabBarController.swift */,
+				783FE4BC24433FF000DD07CF /* MapViewController.swift */,
+				783FE4C424433FF100DD07CF /* MerchantCell.swift */,
+				783FE4C624433FF100DD07CF /* MerchantTableViewController.swift */,
+				783FE4C524433FF100DD07CF /* MerchantViewController.swift */,
+				783FE4BB24433FF000DD07CF /* MockLocationService.swift */,
+				783FE4C324433FF100DD07CF /* Services.swift */,
+				783FE4BF24433FF100DD07CF /* ShoppingViewController.swift */,
+				783FE4C124433FF100DD07CF /* Utilities.swift */,
+				B8CB102323D4A0BF005484AD /* Resnet50.mlmodel */,
+				B8CB101523D49A70005484AD /* Aware.xcdatamodeld */,
+				783FE4DB2443676800DD07CF /* Food101.mlmodel */,
+			);
+			path = Aware;
+			sourceTree = "<group>";
+		};
+		C2F1A215B6D3E2783DC1DF76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CC1ED090F4A3820037C26D8 /* Pods_Seenery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8CB100823D49A70005484AD /* Seenery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8CB102023D49A73005484AD /* Build configuration list for PBXNativeTarget "Seenery" */;
+			buildPhases = (
+				ADF91D04390281540D6F0AE0 /* [CP] Check Pods Manifest.lock */,
+				B8CB100523D49A70005484AD /* Sources */,
+				B8CB100623D49A70005484AD /* Frameworks */,
+				B8CB100723D49A70005484AD /* Resources */,
+				FECDC41879CE03A606696136 /* [CP] Embed Pods Frameworks */,
+				EF43C468D57B2327D5E71BC5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Seenery;
+			productName = Aware;
+			productReference = B8CB100923D49A70005484AD /* Seenery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8CB100123D49A70005484AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Shusil;
+				TargetAttributes = {
+					B8CB100823D49A70005484AD = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B8CB100423D49A70005484AD /* Build configuration list for PBXProject "Seenery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8CB100023D49A70005484AD;
+			productRefGroup = B8CB100A23D49A70005484AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8CB100823D49A70005484AD /* Seenery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8CB100723D49A70005484AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783FE4B824433D6200DD07CF /* Supermarkets.storyboard in Resources */,
+				B8CB101C23D49A73005484AD /* LaunchScreen.storyboard in Resources */,
+				B8CB101923D49A73005484AD /* Assets.xcassets in Resources */,
+				B8CB102623D4A5C8005484AD /* Main.storyboard in Resources */,
+				783FE4D924433FF100DD07CF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADF91D04390281540D6F0AE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Seenery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF43C468D57B2327D5E71BC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seenery/Pods-Seenery-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seenery/Pods-Seenery-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Seenery/Pods-Seenery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FECDC41879CE03A606696136 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seenery/Pods-Seenery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seenery/Pods-Seenery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Seenery/Pods-Seenery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8CB100523D49A70005484AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783FE4DC2443676800DD07CF /* Food101.mlmodel in Sources */,
+				783FE4D424433FF100DD07CF /* Services.swift in Sources */,
+				783FE4CD24433FF100DD07CF /* MapViewController.swift in Sources */,
+				B8CB102423D4A0C0005484AD /* Resnet50.mlmodel in Sources */,
+				783FE4D024433FF100DD07CF /* ShoppingViewController.swift in Sources */,
+				78DDB3FA2442B63900CC099D /* ListeningScreen.swift in Sources */,
+				78E1C96F2442D63500843FAD /* PulseAnimation.swift in Sources */,
+				B8CB101123D49A70005484AD /* ViewController.swift in Sources */,
+				783FE4D724433FF100DD07CF /* MerchantTableViewController.swift in Sources */,
+				783FE4D224433FF100DD07CF /* Utilities.swift in Sources */,
+				783FE4D624433FF100DD07CF /* MerchantViewController.swift in Sources */,
+				78E1C9732442E4C600843FAD /* StreetScreen.swift in Sources */,
+				783FE4CF24433FF100DD07CF /* CameraFrameHandler.swift in Sources */,
+				B8CB100D23D49A70005484AD /* AppDelegate.swift in Sources */,
+				783FE4D524433FF100DD07CF /* MerchantCell.swift in Sources */,
+				783FE4CC24433FF100DD07CF /* MockLocationService.swift in Sources */,
+				B8CB101723D49A70005484AD /* Aware.xcdatamodeld in Sources */,
+				783FE4CB24433FF100DD07CF /* LaunchViewController.swift in Sources */,
+				783FE4D824433FF100DD07CF /* MainTabBarController.swift in Sources */,
+				B8CB100F23D49A70005484AD /* SceneDelegate.swift in Sources */,
+				783FE4CE24433FF100DD07CF /* AboutController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8CB101A23D49A73005484AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8CB101B23D49A73005484AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8CB101E23D49A73005484AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8CB101F23D49A73005484AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8CB102123D49A73005484AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DCD8D8AD9E7B175C6F85C1 /* Pods-Seenery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3458H95HB;
+				INFOPLIST_FILE = Aware/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishes.Seenery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8CB102223D49A73005484AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF28C355B5E75792B320A83 /* Pods-Seenery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3458H95HB;
+				INFOPLIST_FILE = Aware/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishes.Seenery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8CB100423D49A70005484AD /* Build configuration list for PBXProject "Seenery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8CB101E23D49A73005484AD /* Debug */,
+				B8CB101F23D49A73005484AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8CB102023D49A73005484AD /* Build configuration list for PBXNativeTarget "Seenery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8CB102123D49A73005484AD /* Debug */,
+				B8CB102223D49A73005484AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8CB101523D49A70005484AD /* Aware.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8CB101623D49A70005484AD /* Aware.xcdatamodel */,
+			);
+			currentVersion = B8CB101623D49A70005484AD /* Aware.xcdatamodel */;
+			path = Aware.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B8CB100123D49A70005484AD /* Project object */;
+}

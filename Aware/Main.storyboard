@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="08O-L9-xlj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Seenery-->
+        <scene sceneID="chj-57-6iY">
+            <objects>
+                <viewController id="tgg-P5-O8Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4y5-pQ-Qkf"/>
+                        <viewControllerLayoutGuide type="bottom" id="sYs-9F-VEk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Jx-dY-Zob">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seethrough" translatesAutoresizingMaskIntoConstraints="NO" id="euq-Iz-qtj">
+                                <rect key="frame" x="87" y="148" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="uqX-Bv-4SH"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-js-gVX">
+                                <rect key="frame" x="20" y="284" width="374" height="340"/>
+                                <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Seenery is an application which assists visually impaired people in their day to day life through computer vision and machine learning. Our application can help visually impaired people identify 100s of objects and food items, guide them and give them directions to nearby grocery stores. Our app acts as an all-in-one solution for visually impaired people to gain mobility and independence.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxh-iA-xTf">
+                                <rect key="frame" x="20" y="698" width="380" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Jy3-qc-xF2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="S22-4b-7Yq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="euq-Iz-qtj" firstAttribute="leading" secondItem="3Jx-dY-Zob" secondAttribute="leadingMargin" constant="67" id="3T1-1l-Waj"/>
+                            <constraint firstItem="dxh-iA-xTf" firstAttribute="top" secondItem="3Jw-js-gVX" secondAttribute="bottom" constant="74" id="72s-c5-y7w"/>
+                            <constraint firstItem="euq-Iz-qtj" firstAttribute="top" secondItem="4y5-pQ-Qkf" secondAttribute="bottom" constant="8" id="HKC-H5-118"/>
+                            <constraint firstItem="3Jw-js-gVX" firstAttribute="leading" secondItem="3Jx-dY-Zob" secondAttribute="leadingMargin" id="HgT-U3-elY"/>
+                            <constraint firstItem="3Jw-js-gVX" firstAttribute="top" secondItem="euq-Iz-qtj" secondAttribute="bottom" constant="8" id="LPp-su-9N0"/>
+                            <constraint firstItem="3Jw-js-gVX" firstAttribute="trailing" secondItem="3Jx-dY-Zob" secondAttribute="trailingMargin" id="YuK-dR-e0t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dxh-iA-xTf" secondAttribute="trailing" constant="-6" id="ccd-4u-d7R"/>
+                            <constraint firstItem="3Jw-js-gVX" firstAttribute="centerX" secondItem="euq-Iz-qtj" secondAttribute="centerX" id="gVe-Aj-jmh"/>
+                            <constraint firstItem="3Jw-js-gVX" firstAttribute="leading" secondItem="dxh-iA-xTf" secondAttribute="leading" id="hzl-8N-zR3"/>
+                            <constraint firstItem="sYs-9F-VEk" firstAttribute="top" secondItem="dxh-iA-xTf" secondAttribute="bottom" constant="122" id="lxg-ap-itQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Seenery" id="gtm-Tj-jgc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywH-yF-7VH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.73913043478262" y="81.696428571428569"/>
+        </scene>
+        <!--Listening-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="listeningMain" id="BYZ-38-t0r" customClass="ListeningScreen" customModule="Seenery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Object, Groceries, or Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8M-HT-2dH">
+                                <rect key="frame" x="23" y="140" width="377" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="cn8-Og-MVf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Go ahead, I'm listening..." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-eM-M3S">
+                                <rect key="frame" x="23" y="283" width="377" height="86"/>
+                                <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="DmJ-3b-X65"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2b-TY-ogU">
+                                <rect key="frame" x="20" y="735" width="374" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="uMr-NO-7vf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Start Recording" image="icons8-microphone-64">
+                                    <color key="titleColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nG0-e5-hnk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C8j-eM-M3S" firstAttribute="trailing" secondItem="K8M-HT-2dH" secondAttribute="trailing" id="09O-NY-jMN"/>
+                            <constraint firstItem="K8M-HT-2dH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="FjW-7V-823"/>
+                            <constraint firstItem="t2b-TY-ogU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HHw-hG-hfI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t2b-TY-ogU" secondAttribute="bottom" constant="62" id="UdR-9L-2Og"/>
+                            <constraint firstItem="K8M-HT-2dH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="6" id="XTp-x1-W3K"/>
+                            <constraint firstItem="t2b-TY-ogU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fU8-gz-dSg"/>
+                            <constraint firstItem="K8M-HT-2dH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="ff0-eU-JTG"/>
+                            <constraint firstItem="C8j-eM-M3S" firstAttribute="top" secondItem="K8M-HT-2dH" secondAttribute="bottom" constant="8" id="gAc-Ao-z5J"/>
+                            <constraint firstItem="C8j-eM-M3S" firstAttribute="leading" secondItem="K8M-HT-2dH" secondAttribute="leading" id="r7l-Vb-Bhx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Listening" image="mic.fill" catalog="system" id="9Ab-IE-FWc"/>
+                    <navigationItem key="navigationItem" title="Listening" id="mGX-9Y-lLI"/>
+                    <connections>
+                        <outlet property="microphoneButton" destination="t2b-TY-ogU" id="qwV-9h-H3H"/>
+                        <outlet property="textView" destination="C8j-eM-M3S" id="GMN-Wl-Aog"/>
+                        <segue destination="BZp-ne-dFM" kind="show" identifier="listeningToObject" id="BVY-ZG-sIo"/>
+                        <segue destination="sTt-za-HBf" kind="show" identifier="listeningToStreet" id="gy8-5D-3UK"/>
+                        <segue destination="BQf-Xp-EYK" kind="show" identifier="listeningToGroceries" id="oUb-yf-diC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292.753623188406" y="81.696428571428569"/>
+        </scene>
+        <!--GroceriesMain-->
+        <scene sceneID="cze-mr-yDJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Supermarkets" referencedIdentifier="GroceriesMain" id="BQf-Xp-EYK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WAb-yi-U8J"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxR-Cn-aJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="-89"/>
+        </scene>
+        <!--Street-->
+        <scene sceneID="d7V-Fp-KVd">
+            <objects>
+                <viewController id="sTt-za-HBf" customClass="StreetScreen" customModule="Seenery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jiP-8i-bUp"/>
+                        <viewControllerLayoutGuide type="bottom" id="26g-S1-RNL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xwn-bZ-bWf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHv-Pi-Eu7">
+                                <rect key="frame" x="19" y="104" width="376" height="766"/>
+                                <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dictationButtonTapped" destination="sTt-za-HBf" eventType="touchUpInside" id="cRv-0H-fKJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="AHv-Pi-Eu7" secondAttribute="bottom" constant="-8" id="cAr-vW-B8f"/>
+                            <constraint firstItem="AHv-Pi-Eu7" firstAttribute="leading" secondItem="Xwn-bZ-bWf" secondAttribute="leadingMargin" constant="-1" id="hd0-PW-snp"/>
+                            <constraint firstItem="AHv-Pi-Eu7" firstAttribute="centerX" secondItem="Xwn-bZ-bWf" secondAttribute="centerX" id="m6O-cy-aoG"/>
+                            <constraint firstItem="AHv-Pi-Eu7" firstAttribute="top" secondItem="Xwn-bZ-bWf" secondAttribute="topMargin" constant="-36" id="q8h-RU-JwM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Street" image="flag.fill" catalog="system" id="asI-MI-RlX"/>
+                    <navigationItem key="navigationItem" id="KK2-gg-ITN"/>
+                    <connections>
+                        <outlet property="dictationButton" destination="AHv-Pi-Eu7" id="u6n-2a-3zT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXZ-PA-aAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="830"/>
+        </scene>
+        <!--Object-->
+        <scene sceneID="mkp-uc-0fw">
+            <objects>
+                <viewController id="BZp-ne-dFM" customClass="ViewController" customModule="Seenery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gNV-AR-1Aq"/>
+                        <viewControllerLayoutGuide type="bottom" id="an3-3m-ndd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xQb-xy-kSz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qd-li-HHz">
+                                <rect key="frame" x="19" y="96" width="376" height="766"/>
+                                <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dictationButtonTapped" destination="BZp-ne-dFM" eventType="touchUpInside" id="o9j-lm-om8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56417936089999998" green="0.82029730079999996" blue="0.97593718770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5qd-li-HHz" firstAttribute="centerX" secondItem="xQb-xy-kSz" secondAttribute="centerX" id="5dL-8m-hS1"/>
+                            <constraint firstItem="5qd-li-HHz" firstAttribute="top" secondItem="xQb-xy-kSz" secondAttribute="topMargin" constant="-44" id="LQr-9e-4in"/>
+                            <constraint firstItem="5qd-li-HHz" firstAttribute="leading" secondItem="xQb-xy-kSz" secondAttribute="leadingMargin" constant="-1" id="qIg-Yh-TLo"/>
+                            <constraint firstItem="5qd-li-HHz" firstAttribute="bottom" secondItem="xQb-xy-kSz" secondAttribute="bottomMargin" id="tN8-sC-WJE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Object" image="cube.fill" catalog="system" id="yCt-6c-7p8"/>
+                    <navigationItem key="navigationItem" id="7S9-4q-Fgw"/>
+                    <connections>
+                        <outlet property="dictationButton" destination="5qd-li-HHz" id="XDM-UV-PbP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0C-mv-x7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879.7101449275365" y="752.67857142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k15-9q-qtf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="08O-L9-xlj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Ye5-NJ-jvY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tgg-P5-O8Z" kind="relationship" relationship="rootViewController" id="dlC-Jd-IYK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oud-Xw-awe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688.40579710144937" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cube.fill" catalog="system" width="128" height="124"/>
+        <image name="flag.fill" catalog="system" width="128" height="121"/>
+        <image name="icons8-microphone-64" width="64" height="64"/>
+        <image name="mic.fill" catalog="system" width="108" height="128"/>
+        <image name="seethrough" width="1922" height="1934"/>
+    </resources>
+</document>
